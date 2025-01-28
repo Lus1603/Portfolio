@@ -1,14 +1,40 @@
 {
   "name": "port",
   "version": "1.0.0",
+<<<<<<< HEAD
   "main": "../Port/src/script.js",
   "type": "module",
+=======
+<<<<<<< HEAD
+  "main": "Scripts.js",
+=======
+  "main": "../Port/src/script.js",
+  "type": "module",
+>>>>>>> 1891169 (New Commit)
+>>>>>>> e43ca07 (Novo commit)
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  "description": "",
+>>>>>>> e43ca07 (Novo commit)
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "i18next": "^24.2.2",
+    "sass": "^1.83.4"
+<<<<<<< HEAD
+  },
+  "devDependencies": {},
+  "description": ""
+=======
+  }
+=======
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
@@ -17,4 +43,6 @@
   },
   "devDependencies": {},
   "description": ""
+>>>>>>> 1891169 (New Commit)
+>>>>>>> e43ca07 (Novo commit)
 }
