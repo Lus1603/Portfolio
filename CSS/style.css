@@ -1,0 +1,166 @@
+
+
+#home {
+  max-width: 25rem;
+  max-height: 2.5rem;
+}
+
+.nav-link {
+  color: black;
+}
+
+.container-card {
+  margin-top: 8rem;
+}
+
+#column1,
+#column2,
+#column3,
+#column4 {
+  margin-top: 3rem;
+}
+
+#initialColumn {
+  margin-top: 10rem;
+}
+
+/* if the width is greater than 768px */
+body {
+  background-color: #f0ffff;
+}
+
+.card {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.226),
+    0 0 30px rgba(0, 255, 255, 0.227), 0 0 50px rgba(0, 255, 255, 0.228);
+  animation: pulse 10s infinite;
+}
+
+#btn-Language {
+  box-shadow: 0px 1px 3px rgb(4, 4, 237),
+  -0px -1px 5px red;
+  
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 1px rgba(0, 255, 255, 0.229),
+      0 0 2px rgba(0, 255, 255, 0.23), 0 0 3px rgba(0, 255, 255, 0.231);
+  }
+  50% {
+    box-shadow: 0 0 4px rgba(0, 255, 255, 0.232),
+      0 0 5px rgba(0, 255, 255, 0.233), 0 0 6px rgba(0, 255, 255, 0.234);
+  }
+
+  100% {
+    box-shadow: 0 0 7px rgba(0, 255, 255, 0.235),
+      0 0 8px rgba(0, 255, 255, 0.236), 0 0 9px rgba(0, 255, 255, 0.237);
+  }
+}
+
+
+.img-thumbnail {
+  border: 0.2rem solid black;
+}
+
+.Pspeci,
+#gitHub {
+  color: rgb(102, 100, 100);
+}
+
+.custom-line {
+  padding: 0.5rem;
+}
+
+.custom-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* aligns the line at the bottom of the next */
+  left: 25%; /* Sets the start of the line */
+  width: 50%; /* Sets the end of the line */
+  height: 2px; /* Sets the height */
+  background-color: black; /* Cor da linha */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-style.active {
+  border: solid black !important;
+  border-width: 2px 2px 0px 2px !important;
+  margin-right: 2px;
+}
+
+.content {
+  position: absolute; /* Removes the content from the normal flow */
+  opacity: 0; /* initially invisible */
+  transition: opacity 0.5s ease-in-out; /* smooth opacity transition */
+  visibility: hidden;
+  pointer-events: none; /* prevent interaction when invisible */
+}
+
+.content.visible {
+  position: inherit;
+  opacity: 1; /* make the content visible */
+  pointer-events: auto; /* Allow interaction when visible */
+}
+
+.border-black {
+  border: 2px solid black;
+}
+
+#progressContent {
+  margin-top: -14px;
+}
+
+#jsImage {
+  max-width: 1.5rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.3rem;
+}
+
+#cssImage {
+  max-width: 1.5rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.6rem;
+}
+
+#javaImage,
+#htmlImage {
+  max-width: 2rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.3rem;
+}
+
+#sqlImage,
+#jqueryImage,
+#bootstrapImage {
+  max-width: 1.5rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+#flag,
+#pt{
+  max-width: 1.5rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+#postmanImage,
+#jdbcImage {
+  max-width: 1.3rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 500px) {
+  .dropdown-custom {
+    display: flex;
+    justify-content: center; /* Centraliza o dropdown horizontalmente */
+  }
+}
+
+
+
