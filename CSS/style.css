@@ -1,14 +1,7 @@
 
 
-<<<<<<< HEAD
+
 #home {
-=======
-<<<<<<< HEAD
-#Home {
-=======
-#home {
->>>>>>> 1891169 (New Commit)
->>>>>>> e43ca07 (Novo commit)
   max-width: 25rem;
   max-height: 2.5rem;
 }
@@ -149,18 +142,16 @@ body {
   margin-right: 0.2rem;
 }
 
-<<<<<<< HEAD
-#flag,
-#pt{
-=======
-<<<<<<< HEAD
+
+
+
+
 #euaFlag,
 #brasilFlag{
-=======
+}
+
 #flag,
 #pt{
->>>>>>> 1891169 (New Commit)
->>>>>>> e43ca07 (Novo commit)
   max-width: 1.5rem;
   margin-bottom: 0.2rem;
   margin-right: 0.2rem;
@@ -179,6 +170,3 @@ body {
     justify-content: center; /* Centraliza o dropdown horizontalmente */
   }
 }
-
-
-
