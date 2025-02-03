@@ -3,6 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
   changeLanguage("en");
 });
 
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
+
+// document.addEventListener("keydown", function(event) {
+//   if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+//     event.preventDefault();
+//   }
+// });
+
 document.getElementById("btnSave").addEventListener("click", async () => {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
@@ -74,19 +84,27 @@ i18next
           // imageNav: "Image Edit",
           introduction: "Introduction",
           mainText: `
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fugit iste provident modi enim ea similique, nisi eaque repellendus ad quas maxime deserunt explicabo, itaque dolor corporis eveniet dicta odit.
-        `,
+                    <strong>Hello, my name is Luis!</strong> <br>
+                              I study programming and am passionate about technology and software development. I have experience in Java, JavaScript, HTML, CSS, and MySQL, and I am always looking to improve my skills and learn new technologies. My focus is on creating efficient and functional solutions, whether in the development of dynamic websites, interactive applications, or desktop systems.
+                              
+                              <br>
+                              <strong>I am always open to new opportunities!</strong>
+                              
+                    <br><br>
+                    <strong>E-mail:</strong> luip97.21@gmail.com `,
           btnSave: "Save portfolio file",
           backend: "Backend Languages",
           frontend: "Frontend Languages",
           additional: "Additional Content",
           select: "Select Language",
           coursesTxT: "Courses",
-          senac: "Technical Systems Analysis and Development - <strong> Senac, 2023",
-          highSchool: "High school at Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
+          senac:
+            "Technical Systems Analysis and Development - <strong> Senac, 2023",
+          highSchool:
+            "High school at Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
           IT: "IT course - <strong> Olímpio, 2021",
           experienceTxT: "Experiences",
-          pharmacy: "Pharmacy clerk - <strong> RS, Esteio 2024"
+          pharmacy: "Pharmacy clerk - <strong> RS, Esteio 2024",
         },
       },
       pt: {
@@ -96,20 +114,26 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fugit iste prov
           // imageNav: "Edição de imagem",
           introduction: "Introdução",
           mainText: `
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fugit iste provident modi enim ea similique, nisi eaque repellendus ad quas maxime deserunt explicabo, itaque dolor corporis eveniet dicta odit.
-        `,
-          btnSave: "Salvar Portfólio",
+          <strong>Olá, Meu nome é Luis!</strong> <br>
+                              Estudo programação e sou apaixonado por tecnologia e desenvolvimento de software. Tenho experiência em Java, JavaScript, HTML, CSS e MySQL e estou sempre buscando aprimorar minhas habilidades e aprender novas tecnologias. Meu foco é criar soluções eficientes e funcionais, sejam no desenvolvimento de websites dinâmicos, aplicações interativas ou Sistemas desktop.
+                              
+                              <br>
+                              <strong>Estou sempre disponível para novas oportunidades!</strong>
+                              
+                              <br><br>
+                              <strong>E-mail:</strong> luip97.21@gmail.com `,
           backend: "Linguagens Backend",
           frontend: "Linguagens Frontend",
           additional: "Conteúdo Adicional",
           select: "Selecionar Idioma",
           coursesTxT: "Cursos",
-          senac: "Técnico em Analisé e Desenvolvimento de Sistemas - <strong> Senac, 2023",
-          highSchool: "Ensino médio na Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
+          senac:
+            "Técnico em Analisé e Desenvolvimento de Sistemas - <strong> Senac, 2023",
+          highSchool:
+            "Ensino médio na Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
           IT: "Curso de informática - <strong> Olímpio, 2021",
           experienceTxT: "Experiências",
-          pharmacy: "Balconista em Farmácia - <strong> RS, Esteio 2024"
-
+          pharmacy: "Balconista em Farmácia - <strong> RS, Esteio 2024",
         },
       },
     },
@@ -125,18 +149,18 @@ function updateContent() {
   // document.getElementById("imageNav").innerText = i18next.t("imageNav");
   document.getElementById("select").innerText = i18next.t("select");
   document.getElementById("introduction").innerText = i18next.t("introduction");
-  document.getElementById("mainText").innerText = i18next.t("mainText");
+  document.getElementById("mainText").innerHTML = i18next.t("mainText");
   document.getElementById("btnSave").innerText = i18next.t("btnSave");
   document.getElementById("backend").innerText = i18next.t("backend");
   document.getElementById("frontend").innerText = i18next.t("frontend");
   document.getElementById("additional").innerText = i18next.t("additional");
   document.getElementById("coursesTxT").innerHTML = i18next.t("coursesTxT");
-  document.getElementById("IT").innerHTML= i18next.t("IT");
+  document.getElementById("IT").innerHTML = i18next.t("IT");
   document.getElementById("senac").innerHTML = i18next.t("senac");
   document.getElementById("highSchool").innerHTML = i18next.t("highSchool");
-  document.getElementById("experienceTxT").innerHTML = i18next.t("experienceTxT");
+  document.getElementById("experienceTxT").innerHTML =
+    i18next.t("experienceTxT");
   document.getElementById("pharmacy").innerHTML = i18next.t("pharmacy");
-  
 
   const flag = document.getElementById("flag");
   const currentLanguage = i18next.language;
