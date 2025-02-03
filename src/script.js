@@ -166,8 +166,8 @@ function updateContent() {
   const currentLanguage = i18next.language;
 
   const flags = {
-    en: "../IMG/en.png",
-    pt: "../IMG/pt.png",
+    en: "https://png.pngtree.com/png-vector/20230905/ourmid/pngtree-us-flag-sign-png-image_9947494.png",
+    pt: "https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/brazil-flag-icon.png",
   };
 
   flag.src = flags[currentLanguage];
