@@ -70,8 +70,8 @@ i18next
       en: {
         translation: {
           programmingNav: "Programming",
-          videoNav: "Video Edit",
-          imageNav: "Image Edit",
+          // videoNav: "Video Edit",
+          // imageNav: "Image Edit",
           introduction: "Introduction",
           mainText: `
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fugit iste provident modi enim ea similique, nisi eaque repellendus ad quas maxime deserunt explicabo, itaque dolor corporis eveniet dicta odit.
@@ -81,13 +81,19 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fugit iste prov
           frontend: "Frontend Languages",
           additional: "Additional Content",
           select: "Select Language",
+          coursesTxT: "Courses",
+          senac: "Technical Systems Analysis and Development - <strong> Senac, 2023",
+          highSchool: "High school at Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
+          IT: "IT course - <strong> Olímpio, 2021",
+          experienceTxT: "Experiences",
+          pharmacy: "Pharmacy clerk - <strong> RS, Esteio 2024"
         },
       },
       pt: {
         translation: {
           programmingNav: "Programação",
-          videoNav: "Edição de video",
-          imageNav: "Edição de imagem",
+          // videoNav: "Edição de video",
+          // imageNav: "Edição de imagem",
           introduction: "Introdução",
           mainText: `
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fugit iste provident modi enim ea similique, nisi eaque repellendus ad quas maxime deserunt explicabo, itaque dolor corporis eveniet dicta odit.
@@ -97,6 +103,13 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fugit iste prov
           frontend: "Linguagens Frontend",
           additional: "Conteúdo Adicional",
           select: "Selecionar Idioma",
+          coursesTxT: "Cursos",
+          senac: "Técnico em Analisé e Desenvolvimento de Sistemas - <strong> Senac, 2023",
+          highSchool: "Ensino médio na Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
+          IT: "Curso de informática - <strong> Olímpio, 2021",
+          experienceTxT: "Experiências",
+          pharmacy: "Balconista em Farmácia - <strong> RS, Esteio 2024"
+
         },
       },
     },
@@ -108,8 +121,8 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fugit iste prov
 function updateContent() {
   document.getElementById("programmingNav").innerText =
     i18next.t("programmingNav");
-  document.getElementById("videoNav").innerText = i18next.t("videoNav");
-  document.getElementById("imageNav").innerText = i18next.t("imageNav");
+  // document.getElementById("videoNav").innerText = i18next.t("videoNav");
+  // document.getElementById("imageNav").innerText = i18next.t("imageNav");
   document.getElementById("select").innerText = i18next.t("select");
   document.getElementById("introduction").innerText = i18next.t("introduction");
   document.getElementById("mainText").innerText = i18next.t("mainText");
@@ -117,6 +130,13 @@ function updateContent() {
   document.getElementById("backend").innerText = i18next.t("backend");
   document.getElementById("frontend").innerText = i18next.t("frontend");
   document.getElementById("additional").innerText = i18next.t("additional");
+  document.getElementById("coursesTxT").innerHTML = i18next.t("coursesTxT");
+  document.getElementById("IT").innerHTML= i18next.t("IT");
+  document.getElementById("senac").innerHTML = i18next.t("senac");
+  document.getElementById("highSchool").innerHTML = i18next.t("highSchool");
+  document.getElementById("experienceTxT").innerHTML = i18next.t("experienceTxT");
+  document.getElementById("pharmacy").innerHTML = i18next.t("pharmacy");
+  
 
   const flag = document.getElementById("flag");
   const currentLanguage = i18next.language;
