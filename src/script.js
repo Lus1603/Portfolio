@@ -13,13 +13,13 @@ document.addEventListener("contextmenu", function (event) {
 //   }
 // });
 
-document.getElementById("btnSave").addEventListener("click", async () => {
-  const { jsPDF } = window.jspdf;
-  const doc = new jsPDF();
+// document.getElementById("btnSave").addEventListener("click", async () => {
+//   const { jsPDF } = window.jspdf;
+//   const doc = new jsPDF();
 
-  //Add a new basic text to pdf
-  doc.html(document.getElementById("content"));
-});
+//   //Add a new basic text to pdf
+//   doc.html(document.getElementById("content"));
+// });
 
 // Where we use querySelectorALl we are looking for links // Quando nos usamos querySl
 const links = document.querySelectorAll(".nav-link");
@@ -91,8 +91,8 @@ i18next
                               <strong>I am always open to new opportunities!</strong>
                               
                     <br><br>
-                    <strong>E-mail:</strong> luip97.21@gmail.com `,
-          btnSave: "Save portfolio file",
+                    <strong>E-mail:</strong> luip97.21@gmail.com`,
+          // btnSave: "Save portfolio file",
           backend: "Backend Languages",
           frontend: "Frontend Languages",
           additional: "Additional Content",
@@ -121,7 +121,9 @@ i18next
                               <strong>Estou sempre disponível para novas oportunidades!</strong>
                               
                               <br><br>
-                              <strong>E-mail:</strong> luip97.21@gmail.com `,
+                              <strong>E-mail:</strong> luip97.21@gmail.com`,
+
+          // btnSave:"Salvar Portfólio",
           backend: "Linguagens Backend",
           frontend: "Linguagens Frontend",
           additional: "Conteúdo Adicional",
@@ -150,7 +152,7 @@ function updateContent() {
   document.getElementById("select").innerText = i18next.t("select");
   document.getElementById("introduction").innerText = i18next.t("introduction");
   document.getElementById("mainText").innerHTML = i18next.t("mainText");
-  document.getElementById("btnSave").innerText = i18next.t("btnSave");
+  // document.getElementById("btnSave").innerText = i18next.t("btnSave");
   document.getElementById("backend").innerText = i18next.t("backend");
   document.getElementById("frontend").innerText = i18next.t("frontend");
   document.getElementById("additional").innerText = i18next.t("additional");
