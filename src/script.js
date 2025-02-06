@@ -97,22 +97,19 @@ i18next
           frontend: "Frontend Languages",
           additional: "Additional Content",
           select: "Select Language",
-          coursesTxT: "Courses",
-          senac:
-            "Technical Systems Analysis and Development - <strong> Senac, 2023",
-          highSchool:
-            "High school at Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
+          senac: "Technical Systems Analysis and Development - <strong> Senac, 2023",
+          highSchool: "High school at Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
           IT: "IT course - <strong> Olímpio, 2021",
           experienceTxT: "Experiences",
           pharmacy: "Pharmacy clerk - <strong> RS, Esteio 2024",
+          coursesTxT: "Courses",
+          coursesNav: "Courses",
+          experienceNav: "Experiences",
+          credits: "<strong>Resume create by:</strong> Luis Ricardo Silva Coelho"
         },
       },
       pt: {
         translation: {
-          programmingNav: "Programação",
-          // videoNav: "Edição de video",
-          // imageNav: "Edição de imagem",
-          introduction: "Introdução",
           mainText: `
           <strong>Olá, Meu nome é Luis!</strong> <br>
                               Estudo programação e sou apaixonado por tecnologia e desenvolvimento de software. Tenho experiência em Java, JavaScript, HTML, CSS e MySQL e estou sempre buscando aprimorar minhas habilidades e aprender novas tecnologias. Meu foco é criar soluções eficientes e funcionais, sejam no desenvolvimento de websites dinâmicos, aplicações interativas ou Sistemas desktop.
@@ -122,20 +119,24 @@ i18next
                               
                               <br><br>
                               <strong>E-mail:</strong> luip97.21@gmail.com`,
-
+          programmingNav: "Programação",
+          // videoNav: "Edição de video",
+          // imageNav: "Edição de imagem",
+          introduction: "Introdução",
           // btnSave:"Salvar Portfólio",
           backend: "Linguagens Backend",
           frontend: "Linguagens Frontend",
           additional: "Conteúdo Adicional",
           select: "Selecionar Idioma",
-          coursesTxT: "Cursos",
-          senac:
-            "Técnico em Analisé e Desenvolvimento de Sistemas - <strong> Senac, 2023",
-          highSchool:
-            "Ensino médio na Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
+          senac:"Técnico em Análise e Desenvolvimento de Sistemas - <strong> Senac, 2023",
+          highSchool:"Ensino médio na Escola Caetano Gonçalves da Silva - <strong> RS, Esteio 2023",
           IT: "Curso de informática - <strong> Olímpio, 2021",
           experienceTxT: "Experiências",
           pharmacy: "Balconista em Farmácia - <strong> RS, Esteio 2024",
+          coursesTxT: "Cursos",
+          coursesNav: "Cursos",
+          experienceNav: "Experiências",
+          credits: "<strong>Currículo feito por:</strong> Luis Ricardo Silva Coelho "
         },
       },
     },
@@ -163,7 +164,10 @@ function updateContent() {
   document.getElementById("experienceTxT").innerHTML =
     i18next.t("experienceTxT");
   document.getElementById("pharmacy").innerHTML = i18next.t("pharmacy");
-
+  document.getElementById("coursesNav").innerHTML = i18next.t("coursesNav");
+  document.getElementById("experienceNav").innerHTML = i18next.t("experienceNav");
+  document.getElementById("credits").innerHTML = i18next.t("credits");
+  
   const flag = document.getElementById("flag");
   const currentLanguage = i18next.language;
 
