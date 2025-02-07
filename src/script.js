@@ -105,7 +105,9 @@ i18next
           coursesTxT: "Courses",
           coursesNav: "Courses",
           experienceNav: "Experiences",
-          credits: "<strong>Resume create by:</strong> Luis Ricardo Silva Coelho"
+          credits: "<strong>Resume create by:</strong> Luis Ricardo Silva Coelho",
+          secoya: "SECOYA – Institute for Research and Cooperation with the Yanomami People - <strong>IT Assistant, AM / 2022</strong>",
+          funai: "FUNAI – General Coordination of Isolated Indigenous Peoples - <strong>Information Systems Assistant, AM / 2021</strong>"
         },
       },
       pt: {
@@ -136,7 +138,9 @@ i18next
           coursesTxT: "Cursos",
           coursesNav: "Cursos",
           experienceNav: "Experiências",
-          credits: "<strong>Currículo feito por:</strong> Luis Ricardo Silva Coelho "
+          credits: "<strong>Currículo feito por:</strong> Luis Ricardo Silva Coelho ",
+          secoya: "SECOYA – Instituto de Pesquisa e Cooperação com o Povo Yanomami - <strong>Auxiliar de T.I, AM / 2022</strong>",
+          funai: "FUNAI – Coordenadoria Geral de Índios Isolados - <strong>Auxiliar de sistemas de informação, AM/2021</strong>"
         },
       },
     },
@@ -167,6 +171,8 @@ function updateContent() {
   document.getElementById("coursesNav").innerHTML = i18next.t("coursesNav");
   document.getElementById("experienceNav").innerHTML = i18next.t("experienceNav");
   document.getElementById("credits").innerHTML = i18next.t("credits");
+  document.getElementById("secoya").innerHTML = i18next.t("secoya");
+  document.getElementById("funai").innerHTML = i18next.t("funai");
   
   const flag = document.getElementById("flag");
   const currentLanguage = i18next.language;
